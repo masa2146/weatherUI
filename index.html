@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Weather APP</title>
   </head>
-  <body>
+  <body class="jumbotron">
     <div>
       <label>City</label>
       <input type="text" id="city" name="city" />
-	  <label>County</label>
+      <label>County</label>
       <input type="text" id="country" name="country" />
-      <button onclick="createCity()">Create city</button>
+      <button onclick="createCity()">Add</button>
     </div>
-    <div>
+    <div class="jumbotron">
       <table id="city-table" class="table">
         <thead>
           <tr>
@@ -25,6 +29,15 @@
         </thead>
         <tbody id="table-content"></tbody>
       </table>
+    </div>
+
+
+    <div id="hover_bkgr_fricc" class="hover_bkgr_fricc">
+      <span id="helper" class="helper"></span>
+      <div id="text-content">
+        <div id="popupCloseButton" class="popupCloseButton">&times;</div>
+      
+      </div>
     </div>
 
     <script type="text/javascript" src="./custom.js"></script>
